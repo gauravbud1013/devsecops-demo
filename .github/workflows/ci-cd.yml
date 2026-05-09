@@ -183,7 +183,7 @@ jobs:
 
           sed -i "s|image: ${REGISTRY}/.*|image: ${NEW_IMAGE}|g" kubernetes/deployment.yaml
 
-          echo "Updated deployment image:"
+          echo "Updated deployment image: "
           grep "image:" kubernetes/deployment.yaml
 
       - name: Commit and push changes
